@@ -530,4 +530,4 @@ def recommendations():
     seg_matrix['avg_loan'] = seg_matrix['avg_loan'].round(0)
     seg_matrix['action'] = seg_matrix['default_rate'].apply(
         lambda x: '📈 Grow' if x < 5 else ('📊 Maintain' if x < 12 else ('👁️ Monitor' if x < 20 else '🚫 Restrict')))
-    st.dataframe(seg_matrix, use_container_width=True)
+    st.dataframe(seg_matrix, use_container_width=True)b
