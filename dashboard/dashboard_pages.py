@@ -403,7 +403,7 @@ def early_warning():
             return 'background-color: #fff3cd'
         return 'background-color: #d6f5d6'
 
-    styled = top_risk.style.applymap(color_tier, subset=['risk_tier'])
+    styled = top_risk.style.map(color_tier, subset=['risk_tier'])
     st.dataframe(styled, use_container_width=True)
 
     # Filters
